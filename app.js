@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var getAccount = require('./lib/accounts');
 
 var app = express();
 
@@ -55,5 +56,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
+getAccount();
 module.exports = app;
