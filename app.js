@@ -56,5 +56,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-account.create();
+account.get();
 module.exports = app;
